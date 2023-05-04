@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'AzureWorkItem'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AzureWorkItem');
+    expect(app).toEqual('AzureWorkItem');
   });
 
   it('should render title', () => {

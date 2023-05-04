@@ -1,0 +1,13 @@
+
+<form class="example-form" (submit)="sendWorkItem()">
+    <mat-form-field class="example-full-width" >
+      <mat-label >Work Item</mat-label>
+      <input type="number" name="workItemId" matInput [(ngModel)]="workItemId" 
+              placeholder="Work Item" >
+      <mat-hint>Azure work-item ID</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="workItemId <= 0" > Submit <mat-icon>search</mat-icon> </button>
+</form>
+
+
+

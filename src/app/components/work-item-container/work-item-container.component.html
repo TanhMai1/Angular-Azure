@@ -1,0 +1,7 @@
+<app-work-item-input (workItemEvent)="getAzureWorkItem($event)"></app-work-item-input>
+
+<div class="mt-16">
+    <ng-container *ngIf="workItemResults$ | async as workItemResults">
+        <app-work-items-results [workItemsResults]="workItemResults"></app-work-items-results>
+    </ng-container>
+</div>
